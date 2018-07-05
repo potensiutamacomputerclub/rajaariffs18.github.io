@@ -1,0 +1,343 @@
+@font-face {
+        font-family: "Ubuntu";
+        src: url('../font/Ubuntu-Light.TTF');
+        }
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #29324a;
+}
+
+.clearFix{
+  clear: both;
+}
+
+.isCenter{
+  text-align: center;
+}
+
+.isLeft{
+  text-align: left;
+}
+
+.isRight{
+  text-align: right;
+}
+
+.biru-dark-primary{color: #29324a;}
+.hijau-primary{color: #1abcb0;}
+.abu-primary{color:#797d88;}
+
+.kotak-line {
+    width: 410px;
+    height: 410px;
+    position: absolute;
+    border: 15px solid #29324a;
+    right: 145px;
+    z-index: -1;
+    top: 95px;
+}
+
+
+.kotak {
+    position: absolute;
+
+}
+/*--------header--------*/
+header {
+    width: 100%;
+    position: fixed;
+    height: 65px;
+    z-index: 999;
+    background: #fff;
+}
+
+nav {
+    float: right;
+}
+
+nav ul li {
+    float: left;
+    margin: 0 25px;
+    line-height: 65px;
+}
+
+
+nav ul li a {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/*--------End header--------*/
+
+
+#home{
+  background-image: url("../images/foto-Raja.png");
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  min-height: 633px;
+  background-position: 90% 100%;
+  position: relative;
+}
+
+
+#home .caption h2 {
+    padding-top: 165px;
+    font-size: 41px;
+}
+
+#home .caption h1 {
+    font-size: 41px;
+}
+
+
+#home .caption p {
+    font-size: 25px;
+    margin-top: 7px;
+}
+
+#home .caption a {
+    margin-top: 45px;
+    display: inline-block;
+    padding: 7px 25px;
+    background-color: #1abcb0;
+    color: white;
+    border-radius: 21px;
+    font-size: 21px;
+}
+
+
+
+#about-me, #education, #portfolio, #contact{
+  margin-top: -45px;
+  width: 100%;
+  min-height: 700px;
+  background: #29324a;
+  transform: skewY(5deg);
+  z-index: 2;
+  padding: 15px;
+}
+
+#skill{
+  margin-top: -35px;
+  width: 100%;
+  min-height: 700px;
+  background: #1abcb0;
+  transform: skewY(-5deg);
+  padding: 15px;
+  z-index: -1;
+}
+
+.clearSkewY{
+  transform: skewY(-5deg);
+}
+.clearSkewYR{
+  transform: skewY(5deg);
+}
+
+
+.img-medium img {
+    display: block;
+    margin: 196px auto;
+}
+
+
+#about-me .caption p {
+    margin-top: 190px;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+
+.container-dalam {
+    padding: 30px;
+}
+
+.container-dalam span {
+    color: white;
+    font-size: 21px;
+    padding: 15px;
+    padding-bottom: 15px;
+}
+
+
+.container-dalam hr {
+    margin: 9px 0;
+}
+
+.container-dalam h2 {
+    margin-bottom: 15px;
+}
+
+.line{
+  margin: 0 auto;
+  width:6px;
+  height: 92px;
+  background: #29324a;
+}
+
+.circle{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  width: 35px;
+  height: 35px;
+  background: #29324a;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.container-konten {
+    padding-top: 175px;
+}
+
+
+.text-content {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: #fff;
+}
+
+
+.text-content p {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.text-content span {
+    font-size: 21px;
+}
+
+
+#skill .content {
+    padding-top: 196px;
+    text-align: center;
+}
+
+#skill .content span {
+    font-size: 95px;
+    color: #56E0CB;
+}
+
+#skill .content p {
+    margin-bottom: 56px;
+    margin-top: 15px;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+.conteiner-content {
+    padding-top: 175px;
+}
+
+
+.konten {
+    margin: 0 auto;
+    width: 96%;
+}
+
+
+.contact-list {
+    padding-top: 175px;
+}
+
+.elements-contact span {
+    float: left;
+    font-size: 43px;
+    margin-right: 15px;
+}
+
+.elements-contact {
+    margin-top: 35px;
+}
+
+.element-contact p {
+    line-height: 75px;
+}
+
+
+.elements-contact p {
+    padding-top: 11px;
+}
+
+
+.box-quote p {
+    text-align: center;
+    margin-top: 265px;
+    border: 5px solid;
+    margin-left: 45px;
+    margin-right: 45px;
+    padding: 45px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+.box-quote p span {
+    font-size: 25px;
+}
+
+
+footer p {
+    font-style: italic;
+}
+
+
+@media only screen and (max-width:768px){
+  nav{
+    display: none;
+  }
+
+  .container-home{
+    background: linear-gradient( rgba(255,255,255, 1), rgba(33, 34, 52, 0.7));
+    min-height: 633px;
+  }
+
+  #home .caption h1{
+    font-size: 25px;
+  }
+
+  .sm-hide{
+    display: none;
+  }
+
+  .img-medium img{
+    margin-top: 135px;
+    margin-bottom: 15px;
+    width: 55%;
+  }
+
+  #about-me .caption p{
+    margin-top: 35px;
+    margin-bottom: 25px;
+  }
+
+  #about-me .caption p, .container-dalam h2{
+    font-size: 21px;
+  }
+
+  .container-dalam{
+    padding: 0;
+    margin-bottom: 45px;
+  }
+
+  .container-dalam span{font-size: 18px;}
+
+  .container-konten{
+    padding-bottom: 67px; 
+  }
+}
